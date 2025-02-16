@@ -37,7 +37,6 @@ namespace Diva.Utils
     public struct Request : IRequest
     {
         public string Resource;
-        public HttpCookieCollection Cookies;
         public IPEndPoint IPEndPoint;
         public Hashtable Query;
         public CultureInfo[] LanguageInfo;
@@ -54,7 +53,6 @@ namespace Diva.Utils
         {
             Request request = new Request();
             request.Resource = resource;
-            request.Cookies = httpRequest.Cookies;
             request.IPEndPoint = httpRequest.RemoteIPEndPoint;
             request.Query = httpRequest.Query;
             request.LanguageInfo = cinfo;
