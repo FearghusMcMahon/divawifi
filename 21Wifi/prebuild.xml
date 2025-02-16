@@ -1,28 +1,28 @@
 <!-- Diva.Wifi -->
-<Project frameworkVersion="v4_8" name="Diva.Wifi" path="addon-modules/21Wifi" type="Library">
+<Project frameworkVersion="v4_8" name="Diva.Wifi" path="addon-modules/divawifi/21Wifi" type="Library">
   <Configuration name="Debug">
     <Options>
-      <OutputPath>../../bin/</OutputPath>
+      <OutputPath>../../../bin/</OutputPath>
     </Options>
   </Configuration>
   <Configuration name="Release">
     <Options>
-      <OutputPath>../../bin/</OutputPath>
+      <OutputPath>../../../bin/</OutputPath>
     </Options>
   </Configuration>
 
-  <ReferencePath>../../bin/</ReferencePath>
+  <ReferencePath>../../../bin/</ReferencePath>
   <Reference name="System"/>
   <Reference name="System.Core"/>
   <Reference name="System.Web"/>
   <Reference name="System.Xml"/>
 
-  <Reference name="Nini" path="../../bin/"/>
-  <Reference name="Mono.Addins" path="../../bin/"/>
-  <Reference name="log4net" path="../../bin/"/>
-  <Reference name="OpenMetaverse" path="../../bin/"/>
-  <Reference name="OpenMetaverseTypes" path="../../bin/"/>
-  <Reference name="XMLRPC" path="../../bin/"/>
+  <Reference name="Nini" path="../../../bin/"/>
+  <Reference name="Mono.Addins" path="../../../bin/"/>
+  <Reference name="log4net" path="../../../bin/"/>
+  <Reference name="OpenMetaverse" path="../../../bin/"/>
+  <Reference name="OpenMetaverseTypes" path="../../../bin/"/>
+  <Reference name="XMLRPC" path="../../../bin/"/>
 
   <Reference name="OpenSim.Framework"/>
   <Reference name="OpenSim.Framework.Servers"/>
@@ -53,8 +53,8 @@
       <Exclude name="obj" pattern="obj"/>
     </Match>
     
-    <Match pattern="*.ini" buildAction="Copy" destination="../../bin/" />
-    <Match pattern="Localization/*.pot" buildAction="Copy" destination="../../bin/" />
+    <Match pattern="*.ini" buildAction="Copy" destination="../../../bin/" />
+    <Match pattern="Localization/*.pot" buildAction="Copy" destination="../../../bin/" />
 
     <Match pattern="*" buildAction="EmbeddedResource" path="WifiPages" />
     <Match pattern="scripts/*.js" buildAction="EmbeddedResource" path="WifiPages"/>
